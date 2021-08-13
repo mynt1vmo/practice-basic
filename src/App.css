@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+    --main-bg-color: brown;
+    --main-bg-white: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    font-family: 'Inter', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header {
+    background-color: var(--main-bg-color);
+    color: var(--main-bg-white);
 }
 
-.App-link {
-  color: #61dafb;
+.counter {
+    width: 300px;
+    height: 300px;
+    margin: 40px auto;
+    border: 1px solid slategray;
+    text-align: center;
+    border-radius: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.counter .text {
+    font-size: 35px;
+    font-weight: 600;
+    padding: 60px 0;
+    border-bottom: 1px solid slategray;
+    background-color: brown;
+    border-radius: 30px 30px 0 0;
+    color: var(--main-bg-white);
+}
+
+.counter .text .btn {
+    margin: 20px 0;
 }
